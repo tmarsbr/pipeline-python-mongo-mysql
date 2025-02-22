@@ -2,6 +2,43 @@
 
 Pipeline de dados para empresa de e-commerce integrando Python, MongoDB e MySQL.
 
+## Visão Geral do Projeto
+
+Este projeto simula um ambiente real de engenharia de dados em uma empresa de e-commerce, onde precisamos desenvolver um pipeline de dados para atender diferentes equipes internas. O projeto foi desenvolvido para processar dados de vendas de 2020 a 2023, disponibilizando-os de forma adequada para cada time.
+
+### O Desafio
+
+Como engenheiros(as) de dados, precisamos:
+- Extrair dados de vendas de uma API
+- Disponibilizar dados brutos para o time de Data Science
+- Transformar e estruturar dados para o time de BI
+- Criar um pipeline automatizado e sustentável
+
+### Arquitetura do Pipeline
+
+[Espaço reservado para o diagrama do pipeline]
+
+O pipeline consiste em quatro etapas principais:
+1. **Extração**: Coleta de dados da API de produtos
+2. **Armazenamento NoSQL**: Dados brutos salvos no MongoDB para o time de Data Science
+3. **Transformação**: Processamento e estruturação dos dados
+4. **Armazenamento SQL**: Dados estruturados salvos no MySQL para o time de BI
+
+### Por que MongoDB Atlas?
+
+Escolhemos o MongoDB Atlas (versão cloud) por:
+- Compatibilidade com WSL (Windows Subsystem for Linux)
+- Plano gratuito disponível
+- Interface intuitiva
+- Fácil configuração e manutenção
+
+### Objetivos do Pipeline
+
+- Fornecer dados brutos para análises complexas (Data Science)
+- Disponibilizar dados estruturados para relatórios (BI)
+- Automatizar o processo de atualização de dados
+- Criar uma solução escalável e manutenível
+
 ## Descrição
 
 Este projeto implementa um pipeline de dados que:
@@ -110,3 +147,4 @@ O pipeline gera dois arquivos CSV:
 3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
+````
