@@ -1,11 +1,11 @@
 # Pipeline Python - MongoDB - MySQL
 
 Pipeline de dados para empresa de e-commerce integrando Python, MongoDB e MySQL.
-![Diagrama do ambiente virtual](images/venv.png)
 
 ## Visão Geral do Projeto
 
 Este projeto simula um ambiente real de engenharia de dados em uma empresa de e-commerce, onde precisamos desenvolver um pipeline de dados para atender diferentes equipes internas. O projeto foi desenvolvido para processar dados de vendas de 2020 a 2023, disponibilizando-os de forma adequada para cada time.
+![Diagrama do ambiente virtual](images/venv.png)
 
 ### O Desafio
 
@@ -27,7 +27,7 @@ O pipeline consiste em quatro etapas principais:
 Escolhemos o MongoDB Atlas (versão cloud) por:
 - Compatibilidade com WSL (Windows Subsystem for Linux)
 - Plano gratuito disponível
-- Interface intuitiva
+- Interface intuitivahttps://github.com/tmarsbr/pipeline-python-mongo-mysql/blob/master/README.md
 - Fácil configuração e manutenção
 
 ### Objetivos do Pipeline
