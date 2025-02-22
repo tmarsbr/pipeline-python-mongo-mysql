@@ -16,7 +16,7 @@ Como engenheiros(as) de dados, precisamos:
 
 ### Arquitetura do Pipeline
 
-[Espaço reservado para o diagrama do pipeline]
+![Diagrama do ambiente virtual](images/venv.png)
 
 O pipeline consiste em quatro etapas principais:
 1. **Extração**: Coleta de dados da API de produtos
