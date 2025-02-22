@@ -5,6 +5,7 @@ Pipeline de dados para empresa de e-commerce integrando Python, MongoDB e MySQL.
 ## Visão Geral do Projeto
 
 Este projeto simula um ambiente real de engenharia de dados em uma empresa de e-commerce, onde precisamos desenvolver um pipeline de dados para atender diferentes equipes internas. O projeto foi desenvolvido para processar dados de vendas de 2020 a 2023, disponibilizando-os de forma adequada para cada time.
+![Diagrama do ambiente virtual](images/venv.png)
 
 ### O Desafio
 
@@ -15,9 +16,6 @@ Como engenheiros(as) de dados, precisamos:
 - Criar um pipeline automatizado e sustentável
 
 ### Arquitetura do Pipeline
-
-[Espaço reservado para o diagrama do pipeline]
-
 O pipeline consiste em quatro etapas principais:
 1. **Extração**: Coleta de dados da API de produtos
 2. **Armazenamento NoSQL**: Dados brutos salvos no MongoDB para o time de Data Science
