@@ -1,6 +1,7 @@
 # Pipeline Python - MongoDB - MySQL
 
 Pipeline de dados para empresa de e-commerce integrando Python, MongoDB e MySQL.
+![Diagrama do ambiente virtual](images/venv.png)
 
 ## Visão Geral do Projeto
 
@@ -15,9 +16,6 @@ Como engenheiros(as) de dados, precisamos:
 - Criar um pipeline automatizado e sustentável
 
 ### Arquitetura do Pipeline
-
-![Diagrama do ambiente virtual](images/venv.png)
-
 O pipeline consiste em quatro etapas principais:
 1. **Extração**: Coleta de dados da API de produtos
 2. **Armazenamento NoSQL**: Dados brutos salvos no MongoDB para o time de Data Science
