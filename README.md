@@ -27,7 +27,7 @@ O pipeline consiste em quatro etapas principais:
 Escolhemos o MongoDB Atlas (versão cloud) por:
 - Compatibilidade com WSL (Windows Subsystem for Linux)
 - Plano gratuito disponível
-- Interface intuitivahttps://github.com/tmarsbr/pipeline-python-mongo-mysql/blob/master/README.md
+- Interface intuitiva
 - Fácil configuração e manutenção
 
 ### Objetivos do Pipeline
