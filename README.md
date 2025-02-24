@@ -1,26 +1,28 @@
 # Pipeline Python - MongoDB - MySQL
 
-Pipeline de dados para empresa de e-commerce integrando Python, MongoDB e MySQL.
+Imagine transformar o caos dos dados em insights poderosos. Este projeto é o coração de um pipeline que alimenta decisões estratégicas em uma empresa de e-commerce, conectando tecnologia de ponta com inteligência de negócios.
 
 ## Visão Geral do Projeto
 
-Este projeto simula um ambiente real de engenharia de dados em uma empresa de e-commerce, onde precisamos desenvolver um pipeline de dados para atender diferentes equipes internas. O projeto foi desenvolvido para processar dados de vendas de 2020 a 2023, disponibilizando-os de forma adequada para cada time.
+Em um cenário em que cada venda gera toneladas de informações, nosso pipeline foi idealizado para extrair, transformar e distribuir dados de forma rápida e confiável. Desenvolvido para lidar com vendas de 2020 a 2023, ele atende tanto a equipes de Data Science quanto de BI, possibilitando análises profundas e relatórios claros.
 ![Diagrama do ambiente virtual](images/venv.png)
 
 ### O Desafio
 
-Como engenheiros(as) de dados, precisamos:
-- Extrair dados de vendas de uma API
-- Disponibilizar dados brutos para o time de Data Science
-- Transformar e estruturar dados para o time de BI
-- Criar um pipeline automatizado e sustentável
+Nosso desafio era duplo:
+- Capturar grandes volumes de dados de uma API e preservar a integridade dos dados brutos, mantendo-os disponíveis para análises avançadas.
+- Converter esses dados em informações estruturadas, prontas para suportar a tomada de decisão através de dashboards e relatórios.
 
-### Arquitetura do Pipeline
-O pipeline consiste em quatro etapas principais:
-1. **Extração**: Coleta de dados da API de produtos
-2. **Armazenamento NoSQL**: Dados brutos salvos no MongoDB para o time de Data Science
-3. **Transformação**: Processamento e estruturação dos dados
-4. **Armazenamento SQL**: Dados estruturados salvos no MySQL para o time de BI
+### A Jornada
+
+A arquitetura do pipeline reflete uma jornada que começa com a extração dos dados, passa pelo armazenamento em um sistema NoSQL robusto (MongoDB Atlas) e culmina com a transformação para um formato SQL, ideal para relatórios detalhados. Essa abordagem não só otimiza o fluxo de trabalho, como também garante escalabilidade e flexibilidade.
+
+## Detalhes Técnicos e Benefícios
+
+- **Extração Eficiente:** Conectamos a uma API de produtos, garantindo a captura de todos os dados essenciais.
+- **Armazenamento Estratégico:** Dados brutos são preservados no MongoDB, permitindo análises exploratórias e de machine learning.
+- **Transformação Inteligente:** Os dados são limpos e estruturados para alimentar o MySQL, fornecendo bases sólidas para dashboards e análise de KPIs.
+- **Automação e Sustentabilidade:** Todo o processo é automatizado, promovendo atualizações contínuas e consistentes.
 
 ### Por que MongoDB Atlas?
 
@@ -123,13 +125,13 @@ python scripts/transform_data.py
 
 ```
 pipeline-python-mongo-mysql/
-├── data/                    # Diretório para arquivos CSV gerados
-├── notebooks/              # Jupyter notebooks para desenvolvimento
-├── scripts/               # Scripts Python do pipeline
+├── data/                    # Arquivos CSV gerados, prontos para análise
+├── notebooks/               # Notebooks interativos para desenvolvimento e validação
+├── scripts/                 # Scripts que orquestram a extração e transformação dos dados
 │   ├── extract_and_save_data.py
 │   └── transform_data.py
-├── requirements.txt       # Dependências do projeto
-└── README.md             # Documentação
+├── requirements.txt         # Lista de dependências do ambiente
+└── README.md                # Documentação e narrativa do projeto
 ```
 
 ## Arquivos CSV Gerados
@@ -140,9 +142,31 @@ O pipeline gera dois arquivos CSV:
 
 ## Contribuição
 
-1. Fork o projeto
-2. Crie sua branch de feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-````
+Sua colaboração pode transformar essa jornada. Siga estes passos:
+1. Faça um fork do projeto.
+2. Crie sua branch de feature (`git checkout -b feature/AmazingFeature`).
+3. Desenvolva, commit suas mudanças (`git commit -m 'Adiciona nova feature'`) e faça push.
+4. Abra um Pull Request para revisão.
+
+# Pipeline Python Mongo MySQL
+
+## Overview
+Este projeto integra operações com MongoDB e MySQL usando Python para processar dados de produtos. O script `save_data_produtos_2021_mysql.py` lê os dados do arquivo CSV (`../data/tabela_produtos_2021.csv`) e os insere na tabela `tb_produtos_2021` do banco de dados `dbprodutos` no MySQL.
+
+## Requisitos
+- Python 3.x
+- mysql-connector-python
+- pandas
+
+## Setup
+1. Instale as dependências:
+   ```
+   pip install -r requirements.txt
+   ```
+2. Ajuste as configurações de conexão com o MySQL no script `save_data_produtos_2021_mysql.py`.
+
+## Execução
+Para importar os dados para o MySQL, execute:
+```
+python /home/tmarsbr/pipeline-python-mongo-mysql/notebooks/save_data_produtos_2021_mysql.py
+```
